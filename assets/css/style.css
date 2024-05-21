@@ -5,7 +5,7 @@
 
 .principal-container{
 display: grid;
-grid-template-rows: 80px 100px 1fr 80px;
+grid-template-rows: 80px 100px 1fr 200px;
 box-sizing: border-box;
 grid-template-areas: 
 "nav"
@@ -264,10 +264,13 @@ align-items: center;
 
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color:midnightblue;
     grid-area: footer;
    color: white;
-   height: 100%;
+   overflow: hidden;
+   justify-content: center;
 }
 
 footer p {
@@ -276,12 +279,24 @@ footer p {
 
 .icons {
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+ 
     
+}
+
+.correo {
+    display: flex;
+    flex-direction: row;
     
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;
+   
 }
 
 
@@ -352,6 +367,33 @@ footer p {
                    
             
                 }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+                        
+            
+        }
+
+        .correo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .instagram {
+            display: flex;
+            padding: 1rem;
+        }
     
                     
     }
